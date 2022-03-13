@@ -1,0 +1,87 @@
+
+/* Keyword values */
+color: currentcolor;
+
+/* <named-color> values */
+color: red;
+color: orange;
+color: tan;
+color: rebeccapurple;
+
+/* <hex-color> values */
+color: #090;
+color: #009900;
+color: #090a;
+color: #009900aa;
+
+/* <rgb()> values */
+color: rgb(34, 12, 64, 0.6);
+color: rgba(34, 12, 64, 0.6);
+color: rgb(34 12 64 / 0.6);
+color: rgba(34 12 64 / 0.3);
+color: rgb(34.0 12 64 / 60%);
+color: rgba(34.6 12 64 / 30%);
+
+/* <hsl()> values */
+color: hsl(30, 100%, 50%, 0.6);
+color: hsla(30, 100%, 50%, 0.6);
+color: hsl(30 100% 50% / 0.6);
+color: hsla(30 100% 50% / 0.6);
+color: hsl(30.0 100% 50% / 60%);
+color: hsla(30.2 100% 50% / 60%);
+
+/* <hwb()> values */
+color: hwb(90 10% 10%);
+color: hwb(90 10% 10% / 0.5);
+color: hwb(90deg 10% 10%);
+color: hwb(1.5708rad 60% 0%);
+color: hwb(.25turn 0% 40% / 50%);
+
+/* Global values */
+color: inherit;
+color: initial;
+color: revert;
+color: unset;
+
+html {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#navbar-one {
+	background-color: HSL(201, 18%, 40%);
+	active: hsl(0, 0%, 99%);
+}
+
+header { 
+	/* color: white; */
+}
+
+#dark {
+	background-color: hsl(201, 18%, 40%);
+}
+
+/* .navbar-one {
+	font-color: white;
+} */
+
+#navbar-two { 
+	background-color: HSL(201, 18%, 40%);
+	/* color: HSL(0, 0%, 99%); */
+}
+
+#navbar-three { 
+	background-color: HSL(201, 18%, 40%);
+}
+
+#navbar-four {
+	background: HSL(201, 18%, 40%);
+}
+
+#border { 
+	border-color: #21201f;
+}
+
+/* .about-card__info.p { 
+	font-family: "Helvetica Neue",Helvetica,Arial;
+	font-size: 25px;
+} */
