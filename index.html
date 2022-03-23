@@ -5,17 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Vincent's personal profile</title>
     <meta name="description" content="Page-specific description" />
     <meta name="keywords" content="profile,social,website,vincent,developer,user,userinfo" />
-    <script src="https://kit.fontawesome.com/a2e3a24933.js" crossorigin="anonymous"></script>
+    <title>Vincent's personal profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" />
-    <link rel="stylesheet" type="text/css" />
+    <link rel="text/styleshet" href="./public/css/normalize.css">
+    <!-- <link rel="stylesheet" type="text/css" /> -->
     <link rel="stylesheet" href="public/css/screen.min.css" />
     <link rel="stylesheet" href="public/css/custom.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" />
+    <script src="https://kit.fontawesome.com/a2e3a24933.js" crossorigin="anonymous"></script>
     <script src="public/js/head.min.js"></script>
     <script src="./public/js/script.js"></script>
     <script src="./publlic/js/darkMode.js"></script>
@@ -43,7 +44,8 @@
     <div class="second-nav js-nav" id="navbar-two">
         <div class="container">
             <a class="second-nav__logo">
-                <span>VS</span></a>
+                <span>VS</span>
+            </a>
 
                 <!-- <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="light" data-type="VERTICAL" data-vanity="vlsullivan" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/vlsullivan?trk=profile-badge">Vincent Sullivan</a></div> -->
 
@@ -67,9 +69,8 @@
     <div class="home-section__overlay">
         <div class="container">
             <header class="home-section__header">
-                <h1>Vincent Sullivan</h1>
-
-                <h2>@web_vince</h2>
+                <h1>Vince</h1>
+                <h2>@visulliv</h2>
             </header>
         </div>
     </div>
@@ -79,23 +80,21 @@
     <div class="container">
         <div class="about-card">
             <header class="about-card__header" id="dark">
-                <h2>About Me</h2>
-                <h3>✌🏼🚀🐢📏</h3>
+                <h2>About Me ✌🏼🚀🐢📏</h2>
             </header>
             <div class="about-card__info" id="aboutme-text">
                 <p>
-                    Hi!✌🏼 Welcome to my corner of the interweb. I'm a junior developer that creates stuff for the web. I have a diverse skillset gained from my expirience in multiple industries. Most recent employment is Amazon AWS as a software development engineering apprentice for the Amazon Video team. I like to learn how systems work and affect each other (ambiguous on purpose). Browse through my profile to learn more about my expiriments and projects. My resume is available for download. Note: Other documents are meant for recruiters only, feel free to email for the password.<br><br>
+                    Hi!✌🏼 Welcome to my corner of the interweb. I'm a junior developer that creates stuff for the web. I have a diverse skillset gained from my expirience in multiple industries. Most recent employment is Amazon AWS as a software development engineering apprentice for the Amazon Video team. I like to learn how systems work and affect each other (ambiguous on purpose). Browse through my profile to learn more about my expiriments and projects. My resume is available for download. Note: Other documents are meant for recruiters only, feel free to email for the password.
                 </p>
+
                 <blockquote>
-                    <p>
-                        "Believe nothing that you hear and only half of what you see."<br /> 
-                        &nbsp;&nbsp;&nbsp;&minus;Grandma
-                    </p>
+                    <p>"Believe nothing that you hear and only half of what you see."</p>
                 </blockquote>
-                <p>
+            
                 <p class="about-card__info-status">
                     <span>Current status:</span> Actively seeking employment, US Citizen, Willing to Relocate
                 </p>
+
             </div>
         </div>
     </div>
@@ -105,69 +104,55 @@
     <div class="container">
         <header class="common-section__header">
             <h2>Top Frameworks</h2>
-            <h4>visit <a href="https://github.com/vlsulliv" target="_blank">github</a> to see  how I leverage these technologies.</h4>
+            <h4>visit <a href="https://github.com/vlsulliv" target="_blank"><span class="gitdecorate">github</span></a> to see  how I leverage these technologies.</h4>
         </header>
         <div class="grid-container">
             <ul class="services services_advisory">
                 <a class="fa-brands fa-html5"></a>
-                <li class="services__item icon icon_strategy">
+                <!-- <li class="services__item icon icon_strategy"> -->
+                    
+                    <li class="icon services__item">
+                        <img src="./images/web/html5.svg" class="htmwt ico">
                     <h4>HTML</h4>
                     <p>
                         Technically HTML is a programming language; not a framework. In any case, I started my web developer journey with HTML. It is different from other languages because it is a declarative language. You "code" a multiple statements that "declare" what should exist and how they should be arranged on a web page. HTML is normally taught with "hands-on" method of teaching while ignoring concept. This is a missed opportunity to introduce classes and explain the transition from declarative to computation programming language. <br />*Note: i'm speaking from my expirience after taking 2 programming bootcamps.
                     </p>
                 </li>
-                <li class="services__item icon icon_strategy">
+                <li class="icon services__item">
+                    <img src="./images/web/css3.svg" class="csswt ico">
                     <h4>CSS</h4>
                     <p>
                         Used in conjunction with HTML. Use selectors to reference the elements you (the developer) have created using HTML. Add rules to the elements you reference, that determine how the information should be displayed. Again, there is no computation - so CSS is also a declarative language. In general CSS adds "style" to web pages. I was suprised at the power of CSS - there is even pages created for the purpose of showcaing CSS art.
                     </p>
                 </li>
-                <li class="services__item icon icon_improve">
+                <li class="icon services__item">
+                    <img src="./images/web/javascript.svg" class="jscwt ico">
                     <h4>javascript</h4>
                     <p>
-                        Vestibulum hendrerit rhoncus augue ac consequat. Ut blandit
-                        viverra ante, eu iaculis enim dignissim eu. Etiam hendrerit
-                        dapibus imperdiet. Pellentesque mattis aliquam dui id dictum.
-                        Curabitur at velit a felis volutpat venenatis nec id turpis. Sed
-                        sed magna a leo porttitor sodales ac a nisi. In hac habitasse
-                        platea dictumst. Fusce imperdiet vulputate arcu, varius
-                        tincidunt ex venenatis sed.
+                        One of the core technologies of the web - alongside HTML and CSS. Over 97% of the websites use JS on the client side to manipulate web page behavior.
                     </p>
                 </li>
             </ul>
             <ul class="services services_pm">
-                <li class="services__item icon icon_plan">
+                <li class="icon services__item">
+                    <img src="./images/web/json-icon.svg" class="jsowt ico">                    
                     <h4>JSON</h4>
                     <p>
-                        Maecenas dapibus vehicula eros, et lobortis felis elementum id.
-                        Praesent finibus purus quis sem tempus, at scelerisque diam
-                        convallis. Praesent sagittis egestas quam. Maecenas odio leo,
-                        cursus feugiat enim eu, facilisis ullamcorper leo. Curabitur id
-                        leo eu tellus semper porta sit amet vitae sapien.
+                        An open standard date interchange format that uses human-readable text to store and transmit data ovjects consisting of attribute-value pairs and arrays. 
                     </p>
                 </li>
-                <li class="services__item icon icon_recover">
+                <li class="icon services__item">
+                    <img src="./images/web/mongodb.svg" class="monwt ico">
                     <h4>MongoDB</h4>
                     <p>
-                        Suspendisse potenti. Vestibulum nulla urna, sodales et lacus
-                        eleifend, molestie imperdiet enim. Aliquam erat volutpat.
-                        Maecenas eget dolor dictum elit tincidunt accumsan a gravida
-                        metus. Quisque posuere mollis diam quis varius. Mauris
-                        dignissim, justo quis aliquet facilisis, purus lectus lacinia
-                        mi, non vulputate leo ante sit amet odio. Pellentesque lobortis
-                        porta quam, eu blandit odio. Vestibulum vel tempus arcu. Nulla
-                        porta molestie varius.
+                        A cross-platform document-oriented database program. MongoDB was the first database I was introduced to, and prefer it to MYSQL. 
                     </p>
                 </li>
-                <li class="services__item icon icon_support">
+                <li class="icon services__item">
+                    <img src="./images/web/react.svg" class="reawt ico">
                     <h4>React</h4>
                     <p>
-                        Nulla iaculis, nisi id imperdiet viverra, nunc purus ornare
-                        nibh, at condimentum nibh quam eu velit. Praesent egestas elit
-                        vitae consequat auctor. Sed dapibus posuere magna non finibus.
-                        Proin tempor lacus at efficitur porttitor. Vivamus commodo erat
-                        nec lorem varius placerat. Donec porta eros sit amet enim
-                        convallis suscipit.
+                        Open-source front-end JS libtatyraryr lding user interfaces hased on UI components. It is maintaind by "Meta" and a community of individual devs.
                     </p>
                 </li>
             </ul>
@@ -255,7 +240,7 @@
     <header class="common-section__header">
         <h2>Projects</h2>
         <p>
-            Checkout out my work on <a href="https://github.com/vlsulliv" target="_blank">github</a>
+            Checkout out my work on <a href="https://github.com/vlsulliv" target="_blank"><span class="gitdecorate">github</span></a>
         </p>
     </header>
     <div class="projects-wrap">
@@ -481,7 +466,7 @@
 <!-- Footer-->
 <footer class="main-footer" id="navbar-four">
     <div class="container">
-        <p class="main-footer__copyright">&nbsp;<span>Vince</span></p>
+        <p class="main-footer__copyright"><span>Vince</span></p>
         <a class="main-footer__gotop icon icon_gotop js-anchor" href="#home">To top!</a>
         <p class="main-footer__links" id="navbar-four">
             Made with ❤️ and ☕ by &nbsp;<a href="http">Vincent Sullivan</a>

@@ -1,3 +1,12 @@
+/*\
+|*| ========================================================================
+|*| Bootstrap Toggle: bootstrap4-toggle.js v3.6.1
+|*| https://gitbrent.github.io/bootstrap4-toggle/
+|*| ========================================================================
+|*| Vince Personal Profile page
+|*| Licensed under MIT
+|*| ========================================================================
+\*/
 
 /* Keyword values */
 color: currentcolor;
@@ -43,11 +52,25 @@ color: initial;
 color: revert;
 color: unset;
 
+/* BRAND COLOR THEME VARIABLES */
+
+:root {
+	--darkreader-neutral-background: #090c0d;
+	--darkreader-neutral-text: #ede8e2;
+	--darkreader-selection-background: #004cb8;
+	--darkreader-selection-text: #fffdf9;
+}
+
+/* HTML ELEMENTS STYLING  */
+
+
 html {
 	font-family: 'Open Sans', sans-serif;
+	color: #c2baae;
 }
 
 #navbar-one {
+	-webkit-tap-highlight-color: #fffdf900;
 	background-color: HSL(201, 18%, 40%);
 	active: hsl(0, 0%, 99%);
 }
@@ -85,3 +108,209 @@ header {
 	font-family: "Helvetica Neue",Helvetica,Arial;
 	font-size: 25px;
 } */
+
+
+/* .main-footer {
+	color: #21201f;
+} */
+
+/* back button inquieries */
+/* Hide the back button if the browser provides any navigation controls. */
+@media (navigation-controls) {
+	#back-button {
+			display: none;
+	}
+}
+
+/* 
+* Make the back button green if the browser is not showing any navigation controls.
+* Note: This will not match unless the user agent understands the media query, even
+* if no controls are being shown.
+*/
+@media (navigation-controls: none) {
+	#back-button {
+			background: green;
+	}
+}
+
+/*
+* Make the back button red if the browser is showing one too.
+* Note: If this query matches then @media (navigation-controls)
+* will too.
+*/
+@media (navigation-controls: back) {
+	#back-button {
+			background: red;
+	}
+}
+
+.gitdecorate {
+	color: red;
+	font-style: italic;
+}
+
+.second-nav__logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 80px;
+  color: #ecf0f1;
+  font-size: 40px;
+  line-height: 80px;
+  font-family: "Open Sans",Tahoma,Verdana,Arial,sans-serif;
+  letter-spacing: -5px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #D3DEE1;
+  border: 0;
+  -webkit-box-shadow: inset 0 1px 2px -1px #2c3e50;
+  box-shadow: inset 0 1px 2px -1px #2c3e50;
+}
+
+.second-nav__logo::after {
+  content: "";
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  z-index: 250;
+  border-top: 30px solid #D3DEE1;;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.advantages h2::before, .advantages h2::after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  display: block;
+  width: 30%;
+  height: 10px;
+  background-color: HSL(201, 18%, 40%);
+}
+
+.process__step:hover > .process__step-icon::before, .process__step:hover > .process__step-icon.is-active::before {
+  text-shadow: -1px -1px 0 #09ffc8,0 -1px 0 #09ffc8,1px -1px 0 #09ffc8,1px 0 0 #09ffc8,1px 1px 0 #09ffc8,0 1px 0 #09ffc8,-1px 1px 0 #09ffc8,-1px 0 0 #09ffc8;
+}
+
+.process__step:hover > .process__step-icon, .process__step:hover > .process__step-icon.is-active {
+  border-color: #09ffc8;
+}
+.advantages h2::after {
+  background-color: HSL(201, 18%, 40%);
+}
+
+.testimonials__item blockquote p::before {
+  position: absolute;
+  top: -5px;
+  left: -25px;
+  font-size: 20px;
+  color: #09ffc8;
+}
+
+.testimonials__item blockquote cite span.name {
+  color: #09ffc8;
+}
+
+.contact-info__logo {
+  display: inline-block;
+  color: #09ffc8;
+  font-size: 80px;
+  line-height: 60px;
+  letter-spacing: -5px;
+  font-family: "Open Sans",Tahoma,Verdana,Arial,sans-serif;
+  font-weight: 700;
+  text-align: center;
+  border: 0;
+  vertical-align: top;
+}
+
+/* FOOTER */
+.main-footer::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -40px;
+  border-bottom: 40px solid HSL(201, 18%, 40%);
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+}
+
+.services {
+	list-style-type: none;
+	float: left;
+	width: 48%;
+	width: calc(50% - 40px);
+	margin-left: 1%;
+	margin-right: 1%;
+	margin-left: calc(20px);
+	margin-right: calc(20px);
+	height: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+/* .ico {
+  position: relative;
+  align-items: left
+  align: left;
+  content: "";
+  clear: both;
+  display: table;
+} */
+
+
+ico:before {
+  margin-top: 30px;
+	float: left;
+	color: #bdc3c7;
+	font-size: 60px;
+	-webkit-transition: color .5s;
+	-o-transition: color .5s;
+	transition: color .5s;
+}
+
+ico:hover:before {
+  color: #ffa726;
+}
+
+.htmwt {
+  /* url(./images/web/html5.svg); */
+  width: 10%;
+  /* margin-bottom: 50px; */
+}
+
+.htmwt h4 {
+  margin-left: 80px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.ico:before {
+	font-family: "ip";
+	font-style: normal;
+	font-weight: 400;
+}
+
+.csswt {
+width: 10%;
+}
+
+.jscwt {
+  width: 10%;
+}
+
+.jsowt {
+  width: 10%;
+}
+
+.monwt {
+  width: 10%;
+}
+
+.reawt {
+  width: 10%;
+}

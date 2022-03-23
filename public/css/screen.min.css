@@ -173,11 +173,11 @@ a:hover {
 	border-bottom: none;
 }
 
-.icon:before {
+/* .icon:before {
 	font-family: "ip";
 	font-style: normal;
 	font-weight: 400;
-}
+} */
 
 .icon_menu:before {
 	content: "\e801";
@@ -719,10 +719,6 @@ a:hover {
 	-webkit-transition: color .5s;
 	-o-transition: color .5s;
 	transition: color .5s;
-}
-
-.services__item:hover:before {
-	color: #ffa726;
 }
 
 .advantages {

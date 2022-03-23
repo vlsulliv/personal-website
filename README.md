@@ -4,6 +4,8 @@
 
 ## About
 
+🚧🚧  ** UNDER CONSTRUCTION **  🚧🚧
+
 Hello welcome to my personal website. Created using HTML, CSS, Javascript, googlefonts, and fontawesome. I am currently working on creating a personal website using React.
 
 ## Table of Contents<br>
