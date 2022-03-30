@@ -1,0 +1,36 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "description": "A personal profile site create with bootstrap",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlsulliv/personal-website.git"
+  },
+  "author": "vlsulliv",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vlsulliv/personal-website/issues"
+  },
+  "homepage": "https://github.com/vlsulliv/personal-website#readme",
+  "dependencies": {
+    "@npmcli/ci-detect": "^2.0.0",
+    "async.js": "^0.9.5",
+    "browserify": "^17.0.0",
+    "darkmode-js": "^1.5.7",
+    "emotion-icons": "^3.27.0",
+    "express": "^4.17.3",
+    "jsdom": "^19.0.0",
+    "less": "^4.1.2",
+    "mocha": "^9.2.2",
+    "moment": "^2.29.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "passport": "^0.5.2",
+    "underscore": "^1.13.2"
+  }
+}

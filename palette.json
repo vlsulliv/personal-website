@@ -1,0 +1,55 @@
+{
+    "colors": [{
+            "id": "Capri",
+            "hex": "52BBEC",
+            "rgb": "82, 187, 236"
+        },
+        {
+            "id": "Carolina Blue",
+            "hex": "38A2E9",
+            "rgb": "56, 162, 233"
+        },
+        {
+            "id": "Charcoal",
+            "hex": "425361",
+            "rgb": "66, 83, 97"
+        },
+        {
+            "id": "Onyx",
+            "hex": "3A3D3C",
+            "rgb": "58, 61, 60"
+        },
+        {
+            "id": "Middle Grey",
+            "hex": "8C8480",
+            "rgb": "140, 132, 128"
+        },
+        {
+            "id": "Green Sheen",
+            "hex": "71B1AC",
+            "rgb": "113, 177, 172"
+        },
+        {
+            "id": "Gunmetal",
+            "hex": "2C343B",
+            "rgb": "44, 52, 59"
+        },
+        {
+            "id": "Metallic Seaweed",
+            "hex": "42848B",
+            "rgb": "66, 132, 139"
+        },
+        {
+            "id": "Eton Blue",
+            "hex": "8CBFA2",
+            "rgb": "140, 191, 162"
+        },
+        {
+            "id": "Light Gray",
+            "hex": "D6D7D7",
+            "rgb": "214, 215, 215"
+        }
+    ]
+}
+
+lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectet

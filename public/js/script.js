@@ -1,29 +1,36 @@
-const clipboard = require('clipboardy');
+import moment from 'moment';
+const ciDetext = require('@npmcli/ci-detect');
+const popcorn = document.querySelector('#popcorn');
+const tooltip = document.querySelector('#tooltip');
 
-clipboard.writeSync('❤️');
-clipboard.readSync();//=>'❤️'
-clipboard.writeSync('❤️');
-clipboard.readSync();//=>'❤️'
+const inCI = ciDetext();
 
-const backButtonQuery = window.matchMedia('(navigation-controls)');
-const backButton = window.getElementById('back-button');
-backButtonQuery.addEventListener('change', query => {    
-    if (query.matches) {
-        myFancyAnimateBackButtonIn(backButton);
-    } else {
-        myFancyAnimateBackButtonOut(backButton);
-    }
-});
 
-const getUnicorns = count => '❤️'.repeat(count);
+let date = moment()
+console.log(date);
 
-const button = document.createElement('button');
-button.textContent = 'Copy 🦄';
-button.style.fontSize = '40px';
-document.body.appendChild(button);
+let sysinfo = [];
+var elements = document.getElementsByClassName('main-header');
+let ua = Navigator.userAgent
 
-let i = 1;
-button.addEventListener('click', () => {
-    window.copyTextToClipboard(getUnicorns(i));
-    button.textContent = `Copy ${getUnicorns(++i)}`;
-});
+let height = window.innerHeight;
+console.log(height);
+
+let width = window.innerWidth;
+console.log(width);
+
+let uri = document.baseURI;
+let hostname = window.location.hostname;
+
+console.log(uri);
+console.log(hostname);
+
+let elem = window.document;
+console.log(elem);
+
+sysinfo.push(height);
+sysinfo.push(width);
+sysinfo.push(uri);
+sysinfo.push(hostname);
+
+console.log(sysinfo)
